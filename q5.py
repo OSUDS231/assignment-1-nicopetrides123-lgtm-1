@@ -1,12 +1,12 @@
 distance=int(input("enter the trip distance in miles "))
-speed=int(input("enter the average trip speed in miles per hour "))
-mpg=int(input("how many miles per gallon does your car get? "))
-gas=(float(input("what is the price of gas? ")))
+average_speed=int(input("enter the average speed in miles per hour "))
+fuel_efficiency=int(input("what is the fuel efficiency how many miles per gallon does your car get? "))
+price_per_gallon=(float(input("what is the price per gallon of gas? ")))
 
-drive_time=distance/speed
-Gallons_needed= distance/mpg
-fuel_cost= gas*Gallons_needed
+drive_time=distance/average_speed
+Gallons_needed= distance/fuel_efficiency
+fuel_cost= price_per_gallon*Gallons_needed
 
-print(f"for a trip of {float(distance)} miles and an average speed of {speed} miles per hour, the driving time will be {drive_time} hours ")
+print(f"'For a trip of {float(distance)} miles at an average speed of {float(average_speed)} mph, the driving time will be {float(drive_time)} hours.' ")
 print( )
-print(f'your car will use {Gallons_needed} gallons of gas, and the total fuel cost will be ${fuel_cost} ')
+print(f'your car will use {float(Gallons_needed)} gallons of gas, and the total fuel cost will be ${float(fuel_cost)} ')
