@@ -1,6 +1,6 @@
 word = input('Enter a word: ')
 print("first character is",word[0])
 print("Last character is",word[-1])
-print("First 4 characters are",word[0:4])
+print("First four characters are",word[0:4])
 print("every other character is",word[::2])
-print("in reverse order",word[::-1])
+print("in Backward order",word[::-1])
